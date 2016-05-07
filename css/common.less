@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+//颜色
+@body_color:#ecebe9;
+@font_color:#333333;
+@main_color:#c0501f;
+@body_bgc:#99D6F3;
+@main_bgc:#7FC3E2;
+@mbx_color:#626461;
+
+//宽高
+@container:1000px;
+@left:690px;
+@right:300px;
+
+//清楚浮动
+.clearfix(){
+	&:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	zoom:1;
+}
+.overflow(){
+	overflow:hidden;
+}
+
+//字体
+@fs:16px;
+
+//边框
+.border(@width:1px,@type:solid,@color:#a7a7a7){
+	border:@width @type @color;
+}
+.border_left(@width:1px,@type:solid,@color:#a7a7a7){
+	border-left:@width @type @color;
+}
+.border_right(@width:1px,@type:solid,@color:#a7a7a7){
+	border-right:@width @type @color;
+}
+.border_bottom(@width:1px,@type:solid,@color:#a7a7a7){
+	border-bottom:@width @type @color;
+}
+.border_top(@width:1px,@type:solid,@color:#a7a7a7){
+	border-top:@width @type @color;
+}
+
+//外边距
+.margin(@margin_length){
+	margin:@margin_length;
+}
+.ml(@width){
+	margin-left:@width;
+}
+.mr(@width){
+	margin-right:@width;
+}
+.mb(@width){
+	margin-bottom:@width;
+}
+.mt(@width){
+	margin-top:@width;
+}
+
+//边框圆角
+.b-r(@br:3px){
+	-webkit-border-radius:@br;
+	-moz-border-radius:@br;
+	-o-border-radius:@br;
+	border-radius:@br;
+}
+.b-t-l-r(@br:3px){
+	-webkit-border-top-left-radius:@br;
+	-moz-border-top-left-radius:@br;
+	-o-border-top-left-radius:@br;
+	border-top-left-radius:@br;
+}
+.b-t-r-r(@br:3px){
+	-webkit-border-top-right-radius:@br;
+	-moz-border-top-right-radius:@br;
+	-o-border-top-right-radius:@br;
+	border-top-right-radius:@br;
+}
+.b-b-l-r(@br:3px){
+	-webkit-border-bottom-left-radius:@br;
+	-moz-border-bottom-left-radius:@br;
+	-o-border-bottom-left-radius:@br;
+	border-bottom-left-radius:@br;
+}
+.b-b-r-r(@br:3px){
+	-webkit-border-bottom-right-radius:@br;
+	-moz-border-bottom-right-radius:@br;
+	-o-border-bottom-right-radius:@br;
+	border-bottom-right-radius:@br;
+}
+
+//内边距
+.padding(@padding_length){
+	margin:@padding_length;
+}
+.pl(@width){
+	padding-left:@width;
+}
+.pr(@width){
+	padding-right:@width;
+}
+.pb(@width){
+	padding-bottom:@width;
+}
+.pt(@width){
+	padding-top:@width;
+}
+
+//浮动
+.fl(){
+	float:left;
+}
+.fr(){
+	float:right;
+}
